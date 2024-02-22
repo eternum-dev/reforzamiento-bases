@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 
-export const Counter = ({initialValue = 0}) => {
+export const Counter = ({ initialValue = 0 }) => {
 
     const [counter, setCounterState] = useState(initialValue);
 
@@ -16,7 +16,8 @@ export const Counter = ({initialValue = 0}) => {
 
     return (
         <>
-            <h2>counter: {counter}</h2>
+            <h2>Counter:</h2>
+            <h2> {counter}</h2>
             <button onClick={() => handleClick()} style={{ marginRight: ".5rem" }}>+1</button>
         </>
 
